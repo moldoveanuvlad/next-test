@@ -8,10 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.13.14",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "standardx": "^7.0.0"
+    "standardx": "^7.0.0",
+    "twin.macro": "^2.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "babel-plugin-macros": "^3.0.1",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.0.4"
+  }
 }

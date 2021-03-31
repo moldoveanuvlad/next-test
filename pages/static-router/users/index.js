@@ -1,4 +1,6 @@
 import Link from 'next/link'
+// component specific styles
+import styles from './users.module.css'
 
 // ssr generation
 export const getServerSideProps = async props => {
@@ -29,8 +31,8 @@ const Users = ({ users }) => {
       <div className='container'>
         <ul>
           {users && users.map(user => (
-            <li key={user.id}>
-              <h3>{user.firstName} {user.lastName}</h3>
+            <li key={user.id} className='p-4'>
+              <h3 className={styles['header-3']}>{user.firstName} {user.lastName}</h3>
 
               <Link href={`/dynamic-router/users/${user.id}`}>View details</Link>
             </li>)

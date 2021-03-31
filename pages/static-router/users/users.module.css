@@ -1,0 +1,4 @@
+/* these classes will only be applied to the component where the module is imported */
+.header-3{
+  color: slateblue
+}

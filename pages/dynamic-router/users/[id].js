@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-
+import { BackButton } from './styles'
 
 // This function gets called at build time
 export async function getStaticPaths () {
@@ -61,7 +61,7 @@ const User = ({ userProfile }) => {
           <img src={picture} width='500' />
         </div>
       </div>
-      <button onClick={onHandleBackClick}></button>
+      <BackButton disabled onClick={onHandleBackClick}>Go back</BackButton>
     </>
   )
 }

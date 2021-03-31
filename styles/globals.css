@@ -37,3 +37,7 @@ li {
 img {
   width: 100%;
 }
+/* all the h3 across the application will have this style applied */
+h3 {
+  color: #d50000;
+}
