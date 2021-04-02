@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { BackButton } from './styles'
+import { BackButton } from '../../../styles/user.styles'
 
 // This function gets called at build time
 export async function getStaticPaths () {
